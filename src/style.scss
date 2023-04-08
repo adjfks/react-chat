@@ -127,10 +127,79 @@
           }
         }
       }
+
+      .search {
+        border-bottom: 1px solid gray;
+
+        .search-form {
+          padding: 10px;
+          input {
+            background-color: transparent;
+            color: #fff;
+            outline: none;
+            border: none;
+
+            &::placeholder {
+              color: lightgray;
+            }
+          }
+        }
+      }
+
+      .user-chat {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        color: #fff;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #2f2d52;
+        }
+
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        &-info {
+          span {
+            font-size: 18px;
+            font-weight: 500;
+          }
+          p {
+            font-size: 14px;
+            color: lightgray
+          }
+        }
+      }
     }
 
     .chat {
       flex: 2;
+
+      .chat-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+        padding: 10px;
+        background-color: #5d5b8b;
+        color: lightgray;
+
+        .chat-icons {
+          display: flex;
+          gap: 10px;
+
+          img {
+            height: 24px;
+            cursor: pointer;
+          }
+        }
+      }
     }
 
   }
