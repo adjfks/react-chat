@@ -193,6 +193,10 @@
         color: #fff;
         cursor: pointer;
 
+        &.active {
+          background-color: #2f2d52;
+        }
+
         &:hover {
           background-color: #2f2d52;
         }
@@ -348,6 +352,7 @@
             padding: 10px 15px;
             color: #fff;
             background-color: #8da4f1;
+            cursor: pointer;
           }
         }
       }
